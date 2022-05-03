@@ -42,3 +42,37 @@ module ClockDivider(
         end 
     end
 endmodule
+
+/*
+//Test bench
+
+module tb(
+
+    );
+    reg clk;
+    reg rst;
+    wire  clk_o1;
+    wire  clk_o2;
+    wire  clk_o3;
+    wire  clk_o4;
+ClockDivider uut(
+                    clk,
+                    rst,
+                    clk_o1,
+                    clk_o2,
+                    clk_o3,
+                    clk_o4
+    );
+initial
+begin
+    clk =0;
+    rst =1;
+    #10
+    rst =0;
+end 
+always
+begin
+    #5 clk = ! clk ;
+end 
+endmodule
+*/
